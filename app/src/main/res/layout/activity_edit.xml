@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#ED4255"
+        >
+        <TextView
+            android:id="@+id/editingText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal|center"
+            android:singleLine="true"
+            android:text="正在编辑"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/backText"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+
+            />
+
+        <TextView
+            android:id="@+id/finishText"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="确认"
+            android:textSize="18dp"
+            android:textColor="#ffffffff"
+
+            />
+
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--android:enabled="true"-->
+    </RelativeLayout>
+
+    <!--<EditText-->
+    <!--android:id="@+id/editTitle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/gray"-->
+    <!--android:hint="标题"-->
+    <!--android:textSize="25sp"-->
+    <!--/>-->
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D1D1D1"
+        >
+
+        <HorizontalScrollView android:id="@+id/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scrollbars="none"
+            android:background="#454545">
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button android:id="@+id/bold"
+                    android:contentDescription="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="文字\n加粗"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="?android:selectableItemBackground">
+                </Button>
+
+                <Button android:id="@+id/italic"
+                    android:contentDescription="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="文字\n斜体"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="?android:selectableItemBackground">
+                </Button>
+
+                <Button android:id="@+id/underline"
+                    android:contentDescription="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="加下\n划线"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="?android:selectableItemBackground">
+                </Button>
+
+                <Button android:id="@+id/strikethrough"
+                    android:contentDescription="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="加删\n除线"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="?android:selectableItemBackground">
+                </Button>
+
+                <Button android:id="@+id/textcolor"
+                    android:contentDescription="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="改变\n颜色"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="?android:selectableItemBackground">
+                </Button>
+
+                <Button android:id="@+id/insert_picture"
+                    android:contentDescription="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="插入\n图片"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="?android:selectableItemBackground">
+                </Button>
+
+                <Button android:id="@+id/note"
+                    android:contentDescription="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="添加\n批注"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="?android:selectableItemBackground">
+                </Button>
+
+                <Button android:id="@+id/backgroundcolor"
+                    android:contentDescription="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="设置\n高亮"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="?android:selectableItemBackground">
+                </Button>
+
+                <Button android:id="@+id/undo"
+                    android:contentDescription="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="向前\n一步"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="?android:selectableItemBackground">
+                </Button>
+
+                <Button android:id="@+id/redo"
+                    android:contentDescription="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="向后\n一步"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="?android:selectableItemBackground">
+                </Button>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <com.example.forgetpreventer.Utils.RichText
+            android:id="@+id/rich_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/tools"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="top|start"
+            android:scrollbars="vertical"
+            android:background="@android:color/transparent">
+<!-->
+            app:bulletColor="@color/blue_500"
+            app:bulletRadius="@dimen/bullet_radius"
+            app:bulletGapWidth="@dimen/bullet_gap_width"
+            app:historyEnable="true"
+            app:historySize="99"
+            app:linkColor="@color/blue_500"
+            app:linkUnderline="true"
+            app:quoteColor="@color/blue_500"
+            app:quoteStripeWidth="@dimen/quote_stripe_width"
+            app:quoteCapWidth="@dimen/quote_gap_width"><-->
+        </com.example.forgetpreventer.Utils.RichText>
+
+    </RelativeLayout>
+</LinearLayout>
